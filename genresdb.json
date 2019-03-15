@@ -1,0 +1,20 @@
+{"_id":{"$oid":"5c8a913453c1081074f37512"},"genre":"Select genre","movies":[""]}
+{"_id":{"$oid":"5c8a91dbd537b21074d77e28"},"genre":"Horror","movies":[""]}
+{"_id":{"$oid":"5c8a91e9d537b21074d77e29"},"genre":"Drama","movies":[""]}
+{"_id":{"$oid":"5c8a9258d537b21074d77e2a"},"genre":"Action","movies":[""]}
+{"_id":{"$oid":"5c8a9264d537b21074d77e2b"},"genre":"Adventure","movies":[""]}
+{"_id":{"$oid":"5c8a9273d537b21074d77e2c"},"genre":"Crime","movies":[""]}
+{"_id":{"$oid":"5c8a9282d537b21074d77e2d"},"genre":"Fantasy","movies":[""]}
+{"_id":{"$oid":"5c8a929ad537b21074d77e2e"},"genre":"Historical","movies":[""]}
+{"_id":{"$oid":"5c8a92a5d537b21074d77e2f"},"genre":"Historical fiction","movies":[""]}
+{"_id":{"$oid":"5c8a92b9d537b21074d77e30"},"genre":"Mystery","movies":[""]}
+{"_id":{"$oid":"5c8a92c4d537b21074d77e31"},"genre":"Paranoid Fiction","movies":[""]}
+{"_id":{"$oid":"5c8a92d0d537b21074d77e32"},"genre":"Philosophical","movies":[""]}
+{"_id":{"$oid":"5c8a92dcd537b21074d77e33"},"genre":"Romance","movies":[""]}
+{"_id":{"$oid":"5c8a92ead537b21074d77e34"},"genre":"Satire","movies":[""]}
+{"_id":{"$oid":"5c8a92f7d537b21074d77e35"},"genre":"Science fiction","movies":[""]}
+{"_id":{"$oid":"5c8a9304d537b21074d77e36"},"genre":"Thriller","movies":[""]}
+{"_id":{"$oid":"5c8a9329d537b21074d77e37"},"genre":"Western","movies":[""]}
+{"_id":{"$oid":"5c8a933cd537b21074d77e38"},"genre":"Political","movies":[""]}
+{"_id":{"$oid":"5c8acf6bd537b21074d77e39"},"genre":"Comedy","movies":[""]}
+{"_id":{"$oid":"5c8c1ee6f6470b2390421a96"},"genre":"Documentary","movies":[""]}

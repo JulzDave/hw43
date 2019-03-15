@@ -1,0 +1,78 @@
+<h1 style="text-align:center;color:white;margin-top:30px;font-family:fantasy;text-decoration:underline;letter-spacing: 1em; text-shadow: 0 0 20px red;">All Movies</h1>
+<button (click)="moreMov()" style="margin:25px;" class="btn btn-warning">Add more movies</button>
+
+<div  style="width: 100%;display: flex;flex-wrap: wrap;">
+<div class="movCont" style="float:left;width:300px;padding:15px;margin:50px;color:white;margin-bottom: 0px;" *ngFor="let movie of allMovies">
+  <span class="deleteBtn" style="float:right;" (click)="deleteMov($event)">&#10007;</span>
+  <span style="float:right;" (click)="editMov($event)"  class="deleteBtn" data-toggle="modal" data-target="#myModal">&#9998;</span>
+   <h2 id="{{movie._id}}" style="color:white;">
+    {{movie.title}}
+  </h2>
+  <br>
+<img style="width: 265px;border:3px ridge yellow" src="{{movie.image}}" alt="{{movie.title}}"><br><br>
+<p>Genre: {{movie.genre}}</p>
+<p><sub> Movie length: {{movie.length}} minutes</sub></p>
+</div>
+</div>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button> -->
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title"><h2 style="font-family: fantasy; font-weight: 100;">Edit Movie</h2></h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div id="addCont">
+            <table class="table addMovTable">
+
+              <tr>
+                <td>Movie Title:</td>
+                <td><input type="text" [(ngModel)]="title" /></td>
+              </tr>
+              <tr>
+                <td>Movie Length:</td>
+                <td><input type="number" [(ngModel)]="length" /></td>
+              </tr>
+              <tr>
+                <td>Movie Poster:</td>
+                <td><input type="text" [(ngModel)]="poster" /></td>
+              </tr>
+              <tr>
+                <td>Genre:</td>
+                <td><select name="select_movie" id="selectMov" [(ngModel)]="selectedGenre">
+                    <option value="{{genre.genre}}" *ngFor="let genre of genres">
+                      {{genre.genre}}
+                    </option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th style="height: 101px;display:flex;align-items:center;"><button (click)="editMovGoAssign()" style="height:40px;" class="btn btn-success">Submit</button></th>
+              </tr>
+            </table>
+            
+            </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="closeModal" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>

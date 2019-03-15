@@ -1,0 +1,10 @@
+#addCont{
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 21px;
+}
+.addMovTable{
+    max-width: 30%;
+}
